@@ -1,0 +1,61 @@
+{
+  "aggregate_metrics": {
+    "accuracy": 0.6635393076674215,
+    "f1_macro": 0.6334523685970158,
+    "f1_weighted": 0.6611152737360178,
+    "precision_macro": 0.6409962404846564,
+    "precision_weighted": 0.6652627211098385,
+    "recall_macro": 0.6316753975466705,
+    "recall_weighted": 0.6635393076674215
+  },
+  "classifier": "multinomial_naive_bayes",
+  "confusion_matrix": {
+    "NEG": {
+      "NEG": 962,
+      "NEU": 211,
+      "POS": 76
+    },
+    "NEU": {
+      "NEG": 318,
+      "NEU": 819,
+      "POS": 155
+    },
+    "POS": {
+      "NEG": 182,
+      "NEU": 98,
+      "POS": 270
+    }
+  },
+  "experiment_id": "tfidf_multinomial_nb_validation",
+  "feature_count": 16496,
+  "per_class_metrics": {
+    "NEG": {
+      "f1": 0.7097012172630026,
+      "precision": 0.6580027359781122,
+      "recall": 0.7702161729383507,
+      "support": 1249
+    },
+    "NEU": {
+      "f1": 0.6768595041322314,
+      "precision": 0.726063829787234,
+      "recall": 0.6339009287925697,
+      "support": 1292
+    },
+    "POS": {
+      "f1": 0.5137963843958135,
+      "precision": 0.5389221556886228,
+      "recall": 0.4909090909090909,
+      "support": 550
+    }
+  },
+  "representation": "tfidf",
+  "seed": 42,
+  "selected_parameters": {
+    "alpha": 0.5,
+    "fit_prior": false
+  },
+  "selection_metric": "f1_macro",
+  "test_evaluated": false,
+  "training_rows": 9273,
+  "validation_rows": 3091
+}

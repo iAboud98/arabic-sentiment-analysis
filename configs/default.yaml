@@ -94,3 +94,16 @@ features:
     sublinear_tf: true
     norm: l2
     dtype: float32
+
+models:
+  multinomial_nb:
+    search_space:
+      alpha:
+        - 0.01
+        - 0.1
+        - 0.5
+        - 1.0
+        - 2.0
+      fit_prior:
+        - true
+        - false
