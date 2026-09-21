@@ -36,6 +36,8 @@ split:
   test_size: 0.20
   stratify_by: sentiment
   group_duplicate_text: true
+  target_conflict_policy: drop_group
+  duplicate_policy: collapse
 
 runtime:
   device: auto
