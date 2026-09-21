@@ -1,0 +1,40 @@
+project:
+  name: arabic-sentiment-analysis
+  seed: 42
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  results: results
+  figures: reports/figures
+  tables: reports/tables
+  artifacts: artifacts
+
+data:
+  target: sentiment
+  classes:
+    - Positive
+    - Negative
+    - Neutral
+  auxiliary_labels:
+    - sarcasm
+    - dialect
+
+split:
+  train_size: 0.60
+  validation_size: 0.20
+  test_size: 0.20
+  stratify_by: sentiment
+  group_duplicate_text: true
+
+runtime:
+  device: auto
+  deterministic: true
+  num_workers: 0
+
+evaluation:
+  primary_metric: f1_macro
+  final_seeds:
+    - 42
+    - 1337
+    - 2026
