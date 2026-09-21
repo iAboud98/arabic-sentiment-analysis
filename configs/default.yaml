@@ -94,6 +94,15 @@ features:
     sublinear_tf: true
     norm: l2
     dtype: float32
+  word2vec:
+    vector_size: 200
+    window: 5
+    min_count: 2
+    sg: 1
+    negative: 10
+    sample: 0.001
+    epochs: 20
+    workers: 1
 
 models:
   multinomial_nb:
