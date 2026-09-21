@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local datasets
+data/raw/
+data/interim/
+data/processed/
+
+# Generated machine-learning artifacts
+artifacts/
+checkpoints/
+models/
+runs/
+wandb/
+mlruns/
+
+# Large model files
+*.ckpt
+*.h5
+*.keras
+*.pt
+*.pth
