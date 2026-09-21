@@ -1,0 +1,70 @@
+{
+  "aggregate_metrics": {
+    "accuracy": 0.6470397929472662,
+    "f1_macro": 0.5900110052741424,
+    "f1_weighted": 0.6328025707453295,
+    "precision_macro": 0.6562485150554745,
+    "precision_weighted": 0.6529556369050189,
+    "recall_macro": 0.5803105492180592,
+    "recall_weighted": 0.6470397929472662
+  },
+  "classifier": "random_forest",
+  "confusion_matrix": {
+    "NEG": {
+      "NEG": 971,
+      "NEU": 252,
+      "POS": 26
+    },
+    "NEU": {
+      "NEG": 371,
+      "NEU": 869,
+      "POS": 52
+    },
+    "POS": {
+      "NEG": 233,
+      "NEU": 157,
+      "POS": 160
+    }
+  },
+  "experiment_id": "word2vec_random_forest_validation",
+  "feature_count": 200,
+  "fixed_parameters": {
+    "bootstrap": true,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_features": "sqrt",
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "per_class_metrics": {
+    "NEG": {
+      "f1": 0.6876770538243626,
+      "precision": 0.6165079365079366,
+      "recall": 0.7774219375500401,
+      "support": 1249
+    },
+    "NEU": {
+      "f1": 0.6762645914396888,
+      "precision": 0.6799687010954617,
+      "recall": 0.6726006191950464,
+      "support": 1292
+    },
+    "POS": {
+      "f1": 0.40609137055837563,
+      "precision": 0.6722689075630253,
+      "recall": 0.2909090909090909,
+      "support": 550
+    }
+  },
+  "representation": "word2vec_mean",
+  "seed": 42,
+  "selected_parameters": {
+    "max_depth": 40,
+    "min_samples_leaf": 1,
+    "n_estimators": 200
+  },
+  "selection_metric": "f1_macro",
+  "test_evaluated": false,
+  "training_rows": 9273,
+  "validation_rows": 3091
+}
