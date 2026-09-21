@@ -11,11 +11,21 @@ paths:
   artifacts: artifacts
 
 data:
+  expected_columns:
+    - tweet
+    - sarcasm
+    - sentiment
+    - dialect
+  text: tweet
   target: sentiment
   classes:
-    - Positive
-    - Negative
-    - Neutral
+    - NEG
+    - NEU
+    - POS
+  class_names:
+    NEG: Negative
+    NEU: Neutral
+    POS: Positive
   auxiliary_labels:
     - sarcasm
     - dialect
