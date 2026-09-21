@@ -3,6 +3,29 @@ revision = 3
 requires-python = "==3.12.*"
 
 [[package]]
+name = "aiofiles"
+version = "25.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/41/c3/534eac40372d8ee36ef40df62ec129bee4fdb5ad9706e58a29be53b2c970/aiofiles-25.1.0.tar.gz", hash = "sha256:a8d728f0a29de45dc521f18f07297428d56992a742f0cd2701ba86e44d23d5b2", size = 46354, upload-time = "2025-10-09T20:51:04.358Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bc/8a/340a1555ae33d7354dbca4faa54948d76d89a27ceef032c8c3bc661d003e/aiofiles-25.1.0-py3-none-any.whl", hash = "sha256:abe311e527c862958650f9438e859c1fa7568a141b22abcd015e120e86a85695", size = 14668, upload-time = "2025-10-09T20:51:03.174Z" },
+]
+
+[[package]]
+name = "alyahmor"
+version = "0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "arabic-stopwords" },
+    { name = "arramooz-pysqlite" },
+    { name = "libqutrub" },
+    { name = "pyarabic" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cf/88/896e4f95143e09791b352ec3d09643dd4404c45b678c1a27a2651ca878b5/alyahmor-0.2-py3-none-any.whl", hash = "sha256:a6bb1d4bc61dfc6bd4e4faf22abcf7dece911add147f6fc4c70d3b449bd7dd44", size = 65054, upload-time = "2023-01-23T16:55:59.937Z" },
+]
+
+[[package]]
 name = "anyio"
 version = "4.15.1"
 source = { registry = "https://pypi.org/simple" }
@@ -37,6 +60,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "pyyaml" },
+    { name = "qalsadi" },
     { name = "scikit-learn" },
     { name = "scipy" },
     { name = "seaborn" },
@@ -61,6 +85,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=1.26,<3" },
     { name = "pandas", specifier = ">=2.2,<3" },
     { name = "pyyaml", specifier = ">=6,<7" },
+    { name = "qalsadi", specifier = ">=0.5.1,<1" },
     { name = "scikit-learn", specifier = ">=1.5,<2" },
     { name = "scipy", specifier = ">=1.13,<2" },
     { name = "seaborn", specifier = ">=0.13,<1" },
@@ -73,6 +98,17 @@ dev = [
     { name = "ipykernel", specifier = ">=6.29,<8" },
     { name = "jupyterlab", specifier = ">=4.2,<5" },
     { name = "ruff", specifier = ">=0.6,<1" },
+]
+
+[[package]]
+name = "arabic-stopwords"
+version = "0.4.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyarabic" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/af/c6/fb23c352b164979fb2493fae4115ae797f9c7f052234612dc5f03b116b12/Arabic_Stopwords-0.4.3-py3-none-any.whl", hash = "sha256:a1fd681f04316f5e2af6800db384ae665985767899ca6819a8f2b50220a66010", size = 360467, upload-time = "2023-02-02T08:00:29.247Z" },
 ]
 
 [[package]]
@@ -106,6 +142,17 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/e9/10/960d0ee93d4897741bcaf4799c697dae2d81499f66fd1ed042a7dd54c1f4/argon2_cffi_bindings-26.1.0-cp310-abi3-win32.whl", hash = "sha256:a86c069c91a747a2c4e5c51473590aeb48172fff9b2130d23729a42d98665ecb", size = 23898, upload-time = "2026-08-20T07:32:50.114Z" },
     { url = "https://files.pythonhosted.org/packages/6d/3a/0cc14a05810e6add9bce5e87693334baa2222de5f647fa31781885b6573f/argon2_cffi_bindings-26.1.0-cp310-abi3-win_amd64.whl", hash = "sha256:2c36ff87b5dfaa477d0bd51e9d7f6abdae7c8955d2983c97419085d842154b3e", size = 25730, upload-time = "2026-08-20T07:32:51.091Z" },
     { url = "https://files.pythonhosted.org/packages/4e/db/d83cf2af140547f0b9cdaece05b2dc2dcbf991be4667331d073eff771435/argon2_cffi_bindings-26.1.0-cp310-abi3-win_arm64.whl", hash = "sha256:f9c4420a7a864fe1b86ce35befc95b8e39fb852493b81cf798671ddc265de638", size = 24478, upload-time = "2026-08-20T07:32:52.111Z" },
+]
+
+[[package]]
+name = "arramooz-pysqlite"
+version = "0.4.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyarabic" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/21/d4/9794baabccc4ad00c1b63571f66c041709963b57b595a3cb441789138758/arramooz_pysqlite-0.4.2-py3-none-any.whl", hash = "sha256:9c7234e1822908963e6539ac97aa6dd31f21583e5550d5cfe5d9ac1726b08ef6", size = 6343402, upload-time = "2023-07-12T06:26:47.553Z" },
 ]
 
 [[package]]
@@ -277,6 +324,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/27/fb/576f067976d320f5f
 wheels = [
     { url = "https://files.pythonhosted.org/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl", hash = "sha256:9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a", size = 22228, upload-time = "2025-11-03T09:25:25.534Z" },
 ]
+
+[[package]]
+name = "codernitydb3"
+version = "0.6.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b9/df/c705e7185423bc2d3be34d3b23e21d1fb18e693bb3895cb8dd2b9c980bb6/codernitydb3-0.6.0.tar.gz", hash = "sha256:87a87b96c369a02369bfd7a93fb7ef976015ac2f056ea00b73891bc62b48d3b4", size = 46059, upload-time = "2020-07-31T15:42:06.67Z" }
 
 [[package]]
 name = "colorama"
@@ -919,6 +972,18 @@ wheels = [
 ]
 
 [[package]]
+name = "libqutrub"
+version = "1.2.4.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyarabic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b3/09/3291c40b40862c1031c310f8ac9afcfdcefdaf46b7a8dae9f6c6fdbfb76c/libqutrub-1.2.4.1.tar.gz", hash = "sha256:2b69635d8983639131560aec8ee14b08c12d6a8e943fc1963c988721fbdbe6f5", size = 127720, upload-time = "2020-07-15T22:27:48.228Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f9/61/d55311dff8210c0114e4d5575d36231de5215a59f331b9bd404899ab1e5f/libqutrub-1.2.4.1-py3-none-any.whl", hash = "sha256:571ca2d75ace0ae62c2bfc2f9dc3ae37ba6238d7b9d1c5e091ad65e1efca3108", size = 138996, upload-time = "2020-07-15T22:27:20.128Z" },
+]
+
+[[package]]
 name = "markupsafe"
 version = "3.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -991,6 +1056,27 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/e0/47/dd32fa426cc72114383ac549964eecb20ecfd886d1e5ccf5340b55b02f57/mpmath-1.3.0.tar.gz", hash = "sha256:7a28eb2a9774d00c7bc92411c19a89209d5da7c4c9a9e227be8330a23a25b91f", size = 508106, upload-time = "2023-03-07T16:47:11.061Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl", hash = "sha256:a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c", size = 536198, upload-time = "2023-03-07T16:47:09.197Z" },
+]
+
+[[package]]
+name = "mysam-tagmanager"
+version = "0.4.1"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/03/43/ad422e2462a267e2650f7f7f53c05ae6139d6f88d5545cbd15f7aee5acf1/mysam_tagmanager-0.4.1-py3-none-any.whl", hash = "sha256:e71f988cdbd924340f51f564b4ba89278a71de7d5936edc389a2b0ea4e16a0ab", size = 37594, upload-time = "2025-07-21T11:10:28.061Z" },
+]
+
+[[package]]
+name = "naftawayh"
+version = "0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyarabic" },
+    { name = "tashaphyne" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/68/de/0b22ee28fc925098c1f66ef43e8cb1a40d92b8525f19aa1ca35289429e6c/Naftawayh-0.4.tar.gz", hash = "sha256:752cea9a5b2c9f40676cafbc8a020b24e1595e70fa124e28ce208bb6a91edae2", size = 319840, upload-time = "2020-07-16T00:11:02.37Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/83/6a/48363cbd62ab5b167472d8d2bfbc986bf7dd36eac9111fd5bef96508d01c/Naftawayh-0.4-py3-none-any.whl", hash = "sha256:410bcbaf5f775785239642a2549e459d04b64c196f3e224eafdc95d2e52d1de6", size = 332575, upload-time = "2020-07-16T00:11:28.212Z" },
 ]
 
 [[package]]
@@ -1275,6 +1361,25 @@ wheels = [
 ]
 
 [[package]]
+name = "orjson"
+version = "3.12.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/f3/742fb1f62b825f2c010697eaf4e828004bc2a81e7e806666989c132c7c42/orjson-3.12.0.tar.gz", hash = "sha256:d14203fb1aae2ad9b3d52f8a0e82aeb10197ef1c9bc61da7f358bd70b00123d5", size = 4142915, upload-time = "2026-08-14T16:13:30.607Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/be/4a/295da39c651c2faac8bd351a2a346f0fdedd9d50b847ee9dfc27d2207ef6/orjson-3.12.0-cp312-cp312-macosx_10_15_x86_64.macosx_11_0_arm64.macosx_10_15_universal2.whl", hash = "sha256:aa3e43a6846e91d7bde3d5a9c66090fcd8744f569a9b6cffc5e1ca38f6a461c0", size = 223427, upload-time = "2026-08-14T16:12:28.525Z" },
+    { url = "https://files.pythonhosted.org/packages/29/98/758cf90fbeaaafb7f8141bfac75a432099959f3a2f5db93a412e876415d8/orjson-3.12.0-cp312-cp312-macosx_15_0_arm64.whl", hash = "sha256:11edb4660a6680abee9788a3a9072208a2c96538cc1322bd79542065229d8e54", size = 123725, upload-time = "2026-08-14T16:12:30.013Z" },
+    { url = "https://files.pythonhosted.org/packages/32/b5/5b934d251f8651f7e41df180ad0c57a6e1cabe15c7bd331638413a50ebc9/orjson-3.12.0-cp312-cp312-manylinux2014_armv7l.manylinux_2_17_armv7l.whl", hash = "sha256:2d3a9da945a4d96ae758fdaaca56742e6b73b6fd554c5d8876f252a6dad70b83", size = 113375, upload-time = "2026-08-14T16:12:31.209Z" },
+    { url = "https://files.pythonhosted.org/packages/cd/d2/37efb5b12a176ce3ced29f4144f20da57d02757f78ce549637dc1b4e1fc8/orjson-3.12.0-cp312-cp312-manylinux2014_i686.manylinux_2_17_i686.whl", hash = "sha256:92ffc09e07233a6ab6d4e067f7841edcbcc134cb4812155cf171ea5255a421d7", size = 129983, upload-time = "2026-08-14T16:12:32.721Z" },
+    { url = "https://files.pythonhosted.org/packages/50/22/0644b87c73f13e0092df8f35a1fe280d991e5e90072087411e0dd7e44e0c/orjson-3.12.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:bf44e374aadde77b1f6109f1030be51433eb61984379852766b6f4e187db7b1e", size = 130629, upload-time = "2026-08-14T16:12:34.084Z" },
+    { url = "https://files.pythonhosted.org/packages/8c/57/80b986ebfecd9c6a177ddf1c2319717f0cd8feffb2b78946595a18a2fc88/orjson-3.12.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1192a7021b6d071aaf909864f6e924d6a2675ca360485b972b8401749311750b", size = 131245, upload-time = "2026-08-14T16:12:35.713Z" },
+    { url = "https://files.pythonhosted.org/packages/80/3d/75c5ac5a69161f44492a68fbdde66f4cc4ce48cd5e1fb05918e46f0c8848/orjson-3.12.0-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:53c0c474a9d9aff9aebfc0c88de1f28f843d940e6e3a80729abdf6a20274356f", size = 135397, upload-time = "2026-08-14T16:12:37.128Z" },
+    { url = "https://files.pythonhosted.org/packages/71/93/4d71f2df314a97ff0d27a4559bf5888fc8406e3c6dec90e92291e3511215/orjson-3.12.0-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:532ff8cd4bd59a327a953a7dcde922c7fc25b85e29721bb8633265430d3a3873", size = 127693, upload-time = "2026-08-14T16:12:38.627Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/1d/0dbc6be5adfd1730491072fb60beb6bcdf5d7b2596ee41b7fc2e298bfc09/orjson-3.12.0-cp312-cp312-win32.whl", hash = "sha256:a6cf4b18e7de173f209f2084ffbd736dd72389a396326ee80a7022168be232e5", size = 128000, upload-time = "2026-08-14T16:12:39.954Z" },
+    { url = "https://files.pythonhosted.org/packages/2d/c9/97b1ce0112ebf5e949c775ed5b1755e562233179f3584579673cc24d6378/orjson-3.12.0-cp312-cp312-win_amd64.whl", hash = "sha256:010811c1b69773450a01cef97727a67b223242f350b77d4ca000e59a9ef2155a", size = 122106, upload-time = "2026-08-14T16:12:41.324Z" },
+    { url = "https://files.pythonhosted.org/packages/a8/6a/facd8b312e4a0d3a7fa978c7e15821f74a336adf1d65529faec33b48e18b/orjson-3.12.0-cp312-cp312-win_arm64.whl", hash = "sha256:ad29eece0c601737f2a60edc2752a84e7a0785df3efb62e3012834700a5afe0d", size = 126869, upload-time = "2026-08-14T16:12:42.651Z" },
+]
+
+[[package]]
 name = "packaging"
 version = "26.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1332,6 +1437,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/42/92/cc564bf6381ff43ce1f4d06852fc19a2f11d180f23dc32d9588bee2f149d/pexpect-4.9.0.tar.gz", hash = "sha256:ee7d41123f3c9911050ea2c2dac107568dc43b2d3b0c7557a33212c398ead30f", size = 166450, upload-time = "2023-11-25T09:07:26.339Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9e/c3/059298687310d527a58bb01f3b1965787ee3b40dce76752eda8b44e9a2c5/pexpect-4.9.0-py2.py3-none-any.whl", hash = "sha256:7236d1e080e4936be2dc3e326cec0af72acf9212a7e1d060210e70a47e253523", size = 63772, upload-time = "2023-11-25T06:56:14.81Z" },
+]
+
+[[package]]
+name = "pickledb"
+version = "1.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiofiles" },
+    { name = "orjson" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4d/36/62871f6215cc7e1741f2c659d341a3250bf6d88fa2fc98babfbc02c0dff6/pickledb-1.6.tar.gz", hash = "sha256:0a1311e932d92fb66ce6eeb7f6a9af56852dffa2054b6021ba3563402d5219e2", size = 107430, upload-time = "2026-01-05T04:52:07.542Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ba/06/69ec73c5561fb40e4851d58860d1cbba3f603b3eb284ce516e57279091e2/pickledb-1.6-py3-none-any.whl", hash = "sha256:7992862909aca351e93974a35049a4d38e70c459e568a9083ac020b80c0751a6", size = 5224, upload-time = "2026-01-05T04:52:06.032Z" },
 ]
 
 [[package]]
@@ -1413,6 +1531,17 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/da/9f/abfd2959e9261dd5217ca8551d4de211ca6ab26fe9b72cf44731ff6c4442/pure_eval-0.2.4.tar.gz", hash = "sha256:260c2774686e651b79f8b8e7fc9d80b3599ea6a66334b47d5f4abb69fc2c0ea1", size = 20563, upload-time = "2026-09-10T21:41:22.836Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6d/18/83376915176eb058cb86470eb7396388a13350b09a8f233a79303bbcbc5b/pure_eval-0.2.4-py3-none-any.whl", hash = "sha256:96cae060a313cfaad51bb761278bfb0e62dc0248d9315a81173752dc546cd37a", size = 11893, upload-time = "2026-09-10T21:41:21.532Z" },
+]
+
+[[package]]
+name = "pyarabic"
+version = "0.6.15"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d7/64/0ea5be39e6a6515804cae8c280226d771f42750a08182f9d2e5f3b822694/PyArabic-0.6.15-py3-none-any.whl", hash = "sha256:b9a530277876008f5fbe53249c6953b4513dbbf2ea8f4339694e87c8a75d7edf", size = 126368, upload-time = "2022-06-18T10:47:16.66Z" },
 ]
 
 [[package]]
@@ -1520,6 +1649,26 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/30/97/1f5530ff4fc271b4597048371d5af972c2baab51be132ba15874e0327a6a/pyzmq-27.2.0-cp312-abi3-win32.whl", hash = "sha256:fdaaa4ea3242f6ad298eb5177eb042aea5c73c30e76d20caee7b15af20d24ec2", size = 563450, upload-time = "2026-08-20T19:06:52.307Z" },
     { url = "https://files.pythonhosted.org/packages/02/8b/b83f7780dad22e0878e4c7bd9158ebd24ed12bc3d5e3a471cd0576f77ded/pyzmq-27.2.0-cp312-abi3-win_amd64.whl", hash = "sha256:2c218c6ab8bc447ba62054b581fd30209689d199c6ecb253f79615ca74a38e12", size = 628633, upload-time = "2026-08-20T19:06:53.809Z" },
     { url = "https://files.pythonhosted.org/packages/52/aa/3918b5ac7f9987bd9c421b065074fd7409ded88f856f2c704a24341877ec/pyzmq-27.2.0-cp312-abi3-win_arm64.whl", hash = "sha256:348d6fd3e4b81ae4580622ea8c2ea60224e84b2ac1b3be4482e6edc7de06e7a3", size = 556006, upload-time = "2026-08-20T19:06:55.242Z" },
+]
+
+[[package]]
+name = "qalsadi"
+version = "0.5.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "alyahmor" },
+    { name = "arabic-stopwords" },
+    { name = "arramooz-pysqlite" },
+    { name = "codernitydb3" },
+    { name = "libqutrub" },
+    { name = "mysam-tagmanager" },
+    { name = "naftawayh" },
+    { name = "pickledb" },
+    { name = "pyarabic" },
+    { name = "tashaphyne" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ff/bc/66ba91f862b1da98419118c124912bef72760e5d58f13eedb75b878e4f32/qalsadi-0.5.1-py3-none-any.whl", hash = "sha256:15f51c8158a4366443941216fcf32fb230345c850dc86bc5caecc9e4481c8c72", size = 268524, upload-time = "2025-07-27T08:47:17.03Z" },
 ]
 
 [[package]]
@@ -1784,6 +1933,17 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/83/d3/803453b36afefb7c2bb238361cd4ae6125a569b4db67cd9e79846ba2d68c/sympy-1.14.0.tar.gz", hash = "sha256:d3d3fe8df1e5a0b42f0e7bdf50541697dbe7d23746e894990c030e2b05e72517", size = 7793921, upload-time = "2025-04-27T18:05:01.611Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl", hash = "sha256:e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5", size = 6299353, upload-time = "2025-04-27T18:04:59.103Z" },
+]
+
+[[package]]
+name = "tashaphyne"
+version = "0.3.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyarabic" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ae/00/e7a413e76c2a9ef2361809f27df6f355fc848c71dbbea78e3633e1d46523/Tashaphyne-0.3.6-py3-none-any.whl", hash = "sha256:5f01fd90ab8689c2110aa8bed20c30e8f1ca3262427df20705509fe45b1ca63c", size = 251540, upload-time = "2022-01-29T09:54:01.186Z" },
 ]
 
 [[package]]

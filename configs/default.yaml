@@ -50,3 +50,21 @@ evaluation:
     - 42
     - 1337
     - 2026
+
+preprocessing:
+  decode_html_entities: true
+  remove_html_tags: true
+  remove_urls: true
+  replace_mentions: true
+  demojize_emojis: true
+  unpack_hashtags: true
+  normalize_arabic_characters: true
+  remove_diacritics: true
+  remove_tatweel: true
+  normalize_digits: true
+  remove_punctuation_symbols: true
+  collapse_repeated_characters: true
+  remove_stopwords: true
+  lemmatize_arabic_tokens: true
+  stem_arabic_tokens: false
+  preserve_negation: true
