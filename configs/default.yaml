@@ -36,6 +36,17 @@ split:
   test_size: 0.20
   stratify_by: sentiment
   group_duplicate_text: true
+  group_by_processed_text: true
+  n_group_folds: 5
+  partition_folds:
+    train:
+      - 0
+      - 1
+      - 2
+    validation:
+      - 3
+    test:
+      - 4
   target_conflict_policy: drop_group
   duplicate_policy: collapse
 
