@@ -79,3 +79,18 @@ preprocessing:
   lemmatize_arabic_tokens: true
   stem_arabic_tokens: false
   preserve_negation: true
+
+features:
+  tfidf:
+    analyzer: word
+    token_pattern: '(?u)\b\w+\b'
+    lowercase: false
+    ngram_range:
+      - 1
+      - 2
+    min_df: 2
+    max_df: 0.98
+    max_features: 50000
+    sublinear_tf: true
+    norm: l2
+    dtype: float32
