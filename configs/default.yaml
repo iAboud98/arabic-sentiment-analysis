@@ -103,6 +103,18 @@ features:
     sample: 0.001
     epochs: 20
     workers: 1
+  fasttext:
+    vector_size: 200
+    window: 5
+    min_count: 2
+    sg: 1
+    negative: 10
+    sample: 0.001
+    epochs: 20
+    workers: 1
+    min_n: 3
+    max_n: 6
+    bucket: 200000
 
 models:
   multinomial_nb:
