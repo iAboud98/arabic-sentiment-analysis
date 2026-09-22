@@ -1,0 +1,64 @@
+{
+  "aggregate_metrics": {
+    "accuracy": 0.6570689097379488,
+    "f1_macro": 0.6296072106594409,
+    "f1_weighted": 0.6541653936688011,
+    "precision_macro": 0.6405179183051625,
+    "precision_weighted": 0.6597899433633576,
+    "recall_macro": 0.6264976743567666,
+    "recall_weighted": 0.6570689097379488
+  },
+  "class_weighted": false,
+  "classifier": "lstm",
+  "confusion_matrix": {
+    "NEG": {
+      "NEG": 960,
+      "NEU": 202,
+      "POS": 87
+    },
+    "NEU": {
+      "NEG": 366,
+      "NEU": 801,
+      "POS": 125
+    },
+    "POS": {
+      "NEG": 170,
+      "NEU": 110,
+      "POS": 270
+    }
+  },
+  "device": "mps",
+  "experiment_id": "word2vec_lstm_validation",
+  "per_class_metrics": {
+    "NEG": {
+      "f1": 0.6994535519125683,
+      "precision": 0.6417112299465241,
+      "recall": 0.7686148919135308,
+      "support": 1249
+    },
+    "NEU": {
+      "f1": 0.6661122661122661,
+      "precision": 0.7196765498652291,
+      "recall": 0.6199690402476781,
+      "support": 1292
+    },
+    "POS": {
+      "f1": 0.5232558139534884,
+      "precision": 0.5601659751037344,
+      "recall": 0.4909090909090909,
+      "support": 550
+    }
+  },
+  "representation": "word2vec_sequence",
+  "seed": 42,
+  "selected_epoch": 8,
+  "selected_parameters": {
+    "dropout": 0.5,
+    "hidden_size": 64,
+    "learning_rate": 0.001
+  },
+  "selection_metric": "f1_macro",
+  "test_evaluated": false,
+  "training_rows": 9273,
+  "validation_rows": 3091
+}
