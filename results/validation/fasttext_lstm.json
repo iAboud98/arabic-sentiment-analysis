@@ -1,0 +1,64 @@
+{
+  "aggregate_metrics": {
+    "accuracy": 0.6528631510837917,
+    "f1_macro": 0.6164206035214305,
+    "f1_weighted": 0.648076027845733,
+    "precision_macro": 0.6310428749115159,
+    "precision_weighted": 0.6485818899747917,
+    "recall_macro": 0.6096153237441252,
+    "recall_weighted": 0.6528631510837917
+  },
+  "class_weighted": false,
+  "classifier": "lstm",
+  "confusion_matrix": {
+    "NEG": {
+      "NEG": 926,
+      "NEU": 254,
+      "POS": 69
+    },
+    "NEU": {
+      "NEG": 316,
+      "NEU": 860,
+      "POS": 116
+    },
+    "POS": {
+      "NEG": 163,
+      "NEU": 155,
+      "POS": 232
+    }
+  },
+  "device": "mps",
+  "experiment_id": "fasttext_lstm_validation",
+  "per_class_metrics": {
+    "NEG": {
+      "f1": 0.6978146194423511,
+      "precision": 0.6590747330960854,
+      "recall": 0.7413931144915933,
+      "support": 1249
+    },
+    "NEU": {
+      "f1": 0.6716126513080828,
+      "precision": 0.677698975571316,
+      "recall": 0.6656346749226006,
+      "support": 1292
+    },
+    "POS": {
+      "f1": 0.47983453981385726,
+      "precision": 0.5563549160671463,
+      "recall": 0.4218181818181818,
+      "support": 550
+    }
+  },
+  "representation": "fasttext_sequence",
+  "seed": 42,
+  "selected_epoch": 2,
+  "selected_parameters": {
+    "dropout": 0.3,
+    "hidden_size": 64,
+    "learning_rate": 0.001
+  },
+  "selection_metric": "f1_macro",
+  "test_evaluated": false,
+  "training_rows": 9273,
+  "validation_rows": 3091
+}

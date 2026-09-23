@@ -1,0 +1,64 @@
+{
+  "aggregate_metrics": {
+    "accuracy": 0.6609511484956325,
+    "f1_macro": 0.6334797840367105,
+    "f1_weighted": 0.6574685868372551,
+    "precision_macro": 0.6481667404423738,
+    "precision_weighted": 0.6612663685967005,
+    "recall_macro": 0.6270861530203617,
+    "recall_weighted": 0.6609511484956325
+  },
+  "class_weighted": false,
+  "classifier": "cnn",
+  "confusion_matrix": {
+    "NEG": {
+      "NEG": 952,
+      "NEU": 232,
+      "POS": 65
+    },
+    "NEU": {
+      "NEG": 349,
+      "NEU": 828,
+      "POS": 115
+    },
+    "POS": {
+      "NEG": 171,
+      "NEU": 116,
+      "POS": 263
+    }
+  },
+  "device": "mps",
+  "experiment_id": "fasttext_cnn_validation",
+  "per_class_metrics": {
+    "NEG": {
+      "f1": 0.6997427416391032,
+      "precision": 0.6467391304347826,
+      "recall": 0.7622097678142514,
+      "support": 1249
+    },
+    "NEU": {
+      "f1": 0.6709886547811994,
+      "precision": 0.7040816326530612,
+      "recall": 0.6408668730650154,
+      "support": 1292
+    },
+    "POS": {
+      "f1": 0.5297079556898288,
+      "precision": 0.5936794582392777,
+      "recall": 0.4781818181818182,
+      "support": 550
+    }
+  },
+  "representation": "fasttext_sequence",
+  "seed": 42,
+  "selected_epoch": 5,
+  "selected_parameters": {
+    "dropout": 0.3,
+    "learning_rate": 0.001,
+    "num_filters": 128
+  },
+  "selection_metric": "f1_macro",
+  "test_evaluated": false,
+  "training_rows": 9273,
+  "validation_rows": 3091
+}
