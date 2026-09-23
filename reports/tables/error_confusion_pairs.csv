@@ -1,0 +1,7 @@
+sentiment,predicted_sentiment,errors
+NEU,NEG,332
+NEG,NEU,227
+POS,NEG,175
+POS,NEU,114
+NEU,POS,103
+NEG,POS,77

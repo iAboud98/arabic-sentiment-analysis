@@ -62,6 +62,20 @@ evaluation:
     - 1337
     - 2026
 
+experiments:
+  augmentation:
+    target_class: POS
+    target_count_strategy: match_largest_class
+    operations:
+      - swap
+      - delete
+  class_imbalance:
+    representation: tfidf
+    classifier: random_forest
+    class_weight: balanced
+  final_evaluation:
+    error_example_limit: 25
+
 preprocessing:
   decode_html_entities: true
   remove_html_tags: true

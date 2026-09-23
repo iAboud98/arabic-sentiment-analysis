@@ -1,0 +1,46 @@
+{
+  "augmented": false,
+  "class_weights": {
+    "NEG": 0.8242666666666667,
+    "NEU": 0.7974716202270382,
+    "POS": 1.8767455980570735
+  },
+  "classifier": "random_forest",
+  "experiment_id": "tfidf_random_forest_class_weight_validation",
+  "representation": "tfidf",
+  "selected_parameters": {
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "n_estimators": 200
+  },
+  "test_evaluated": false,
+  "validation_metrics": {
+    "accuracy": 0.6285991588482692,
+    "f1_macro": 0.603667227252133,
+    "f1_weighted": 0.6285471560835826,
+    "precision_macro": 0.6038556204905056,
+    "precision_weighted": 0.629803187659382,
+    "recall_macro": 0.6045693167724911,
+    "recall_weighted": 0.6285991588482692
+  },
+  "validation_per_class": {
+    "NEG": {
+      "f1": 0.6428274428274429,
+      "precision": 0.6686851211072664,
+      "recall": 0.6188951160928743,
+      "support": 1249
+    },
+    "NEU": {
+      "f1": 0.6704204204204204,
+      "precision": 0.6508746355685131,
+      "recall": 0.6911764705882353,
+      "support": 1292
+    },
+    "POS": {
+      "f1": 0.4977538185085355,
+      "precision": 0.4920071047957371,
+      "recall": 0.5036363636363637,
+      "support": 550
+    }
+  }
+}

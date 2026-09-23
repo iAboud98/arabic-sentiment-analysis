@@ -1,0 +1,40 @@
+{
+  "fixed_epochs": 5,
+  "model_key": "fasttext_cnn",
+  "parameters": {
+    "dropout": 0.3,
+    "learning_rate": 0.001,
+    "num_filters": 128
+  },
+  "seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "summary": {
+    "mean": {
+      "accuracy": 0.6544807505661597,
+      "f1_macro": 0.6103252916578231,
+      "f1_weighted": 0.6445226343686784,
+      "neg_f1": 0.6886852048807645,
+      "neu_f1": 0.6786748172803967,
+      "pos_f1": 0.46361585281230794,
+      "precision_macro": 0.6568992737028668,
+      "precision_weighted": 0.6612289475537011,
+      "recall_macro": 0.6015393875423992,
+      "recall_weighted": 0.6544807505661597
+    },
+    "std": {
+      "accuracy": 0.011433579454592193,
+      "f1_macro": 0.024730262141179817,
+      "f1_weighted": 0.017029025626768793,
+      "neg_f1": 0.015903307536085397,
+      "neu_f1": 0.02723991392774691,
+      "pos_f1": 0.0621245915851478,
+      "precision_macro": 0.0038986711867749642,
+      "precision_weighted": 0.005689735745825641,
+      "recall_macro": 0.02646277000724677,
+      "recall_weighted": 0.011433579454592193
+    }
+  }
+}

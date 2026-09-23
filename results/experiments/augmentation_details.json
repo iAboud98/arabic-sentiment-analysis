@@ -1,0 +1,51 @@
+{
+  "attempted_variants": 2732,
+  "class_counts_after": {
+    "NEG": 3750,
+    "NEU": 3876,
+    "POS": 3876
+  },
+  "class_counts_before": {
+    "NEG": 3750,
+    "NEU": 3876,
+    "POS": 1647
+  },
+  "experiment_id": "arabic_eda_validation",
+  "feature_count": 28679,
+  "operations": [
+    "swap",
+    "delete"
+  ],
+  "synthetic_rows": 2229,
+  "target_class": "POS",
+  "test_evaluated": false,
+  "validation_metrics": {
+    "accuracy": 0.6670980265286315,
+    "f1_macro": 0.6207134637236774,
+    "f1_weighted": 0.6577467174433033,
+    "precision_macro": 0.6579454100110861,
+    "precision_weighted": 0.6673704373826623,
+    "recall_macro": 0.6111559914973915,
+    "recall_weighted": 0.6670980265286315
+  },
+  "validation_per_class": {
+    "NEG": {
+      "f1": 0.7113806635747414,
+      "precision": 0.6415701415701416,
+      "recall": 0.7982385908726981,
+      "support": 1249
+    },
+    "NEU": {
+      "f1": 0.6895725129844187,
+      "precision": 0.7126341866226259,
+      "recall": 0.6679566563467493,
+      "support": 1292
+    },
+    "POS": {
+      "f1": 0.4611872146118721,
+      "precision": 0.6196319018404908,
+      "recall": 0.36727272727272725,
+      "support": 550
+    }
+  }
+}
